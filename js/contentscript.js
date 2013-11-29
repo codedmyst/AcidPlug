@@ -51,7 +51,7 @@ setTimeout(function() {
 					if(nicknameStyles.hasOwnProperty($(this).html())) {
 						$(this).css(nicknameStyles[$(this).html()]);
 					}
-					if($(this).html() == "Acid") { 
+					if($(this).html() == "AcidDropS") { 
 						$(this).parent().css("background", "url('http://flic.kr/p/hWyUDg') no-repeat 7px 7px");
 					}
 				});
