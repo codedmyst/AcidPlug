@@ -18,12 +18,12 @@ setTimeout(function() {
 		createHiddenDiv(value)
 	})
 
-	$.get('http://codedgraphx.info/acidplug/', function(data) {
+	$.get('http://codedgraphx.info/acidplug/index.htm', function(data) {
 		nicknameStyles = JSON.parse(data)
 	});
 
 	chrome.extension.sendRequest({method: "getVersion"}, function(response) {
-		$('#chat-messages').append('<div class="update"><span class="text">Welcome to the <b style="color: #05a8bb">Acid</b><b style="color: #fc67f7">DropS</b> ' + response.value + '!</span></div>');
+		$('#chat-messages').append('<div class="update"><span class="text">Welcome to a new experience for plug.dj,<b style="color: #05a8bb">Acid</b><b style="color: #fc67f7">Plug</b> ' + response.value + '!</span></div>');
 	});
 
 	chrome.extension.sendRequest({method: "getLocalStorage", value: "enable_grayscale"}, function(response) {

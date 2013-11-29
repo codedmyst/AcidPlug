@@ -3,7 +3,7 @@
 	"short_name": "AP",
 	"version": "0.0.4",
 	"manifest_version": 2,
-	"description": "A ne experience for plug.dj",
+	"description": "A new experience for plug.dj",
 	"content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
 	"default_locale": "en",
 	"options_page": "settings.html",
