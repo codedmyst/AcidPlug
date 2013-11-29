@@ -1,7 +1,7 @@
 {
 	"name": "AcidPlug",
 	"short_name": "AP",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"manifest_version": 2,
 	"description": "Some tweaks for plug.dj",
 	"content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
@@ -23,7 +23,7 @@
 		"default_popup": "settings.html"
 	},
 	"permissions": [
-		"notifications", "tabs", "http://statpoint.info/*", "http://plug.dj/*"
+		"notifications", "tabs", "http://codedgraphx.info/*", "http://plug.dj/*"
 	],
 	"web_accessible_resources": [
 		"js/script.js", "js/jquery-1.9.1.min.js", "js/functions.js"
