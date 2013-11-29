@@ -7,7 +7,7 @@ $.each(window.localStorage, function(name) {
 		_gaq.push(['_setCustomVar', 2, name, window.localStorage[name], '3'])
 	}
 })
-_gaq.push(['_trackEvent', 'LastPlug Stats', 'Loads Into Page', chrome.app.getDetails().version]);
+_gaq.push(['_trackEvent', 'AcidPlug Stats', 'Loads Into Page', chrome.app.getDetails().version]);
 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 ga.src = 'https://ssl.google-analytics.com/ga.js';
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);

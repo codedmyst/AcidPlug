@@ -23,7 +23,7 @@ setTimeout(function() {
 	});
 
 	chrome.extension.sendRequest({method: "getVersion"}, function(response) {
-		$('#chat-messages').append('<div class="update"><span class="text">Also, welcome to the LastPlug ' + response.value + '!</span></div>');
+		$('#chat-messages').append('<div class="update"><span class="text">Also, welcome to the AcidPlug ' + response.value + '!</span></div>');
 	});
 
 	chrome.extension.sendRequest({method: "getLocalStorage", value: "enable_grayscale"}, function(response) {
@@ -51,8 +51,8 @@ setTimeout(function() {
 					if(nicknameStyles.hasOwnProperty($(this).html())) {
 						$(this).css(nicknameStyles[$(this).html()]);
 					}
-					if($(this).html() == "Maxorq ") { 
-						$(this).parent().css("background", "url('http://i.imgur.com/y9V8q2x.png') no-repeat 7px 7px");
+					if($(this).html() == "Acid") { 
+						$(this).parent().css("background", "url('http://flic.kr/p/hWyUDg') no-repeat 7px 7px");
 					}
 				});
 			}

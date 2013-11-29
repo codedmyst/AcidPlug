@@ -1,7 +1,7 @@
 {
-	"name": "LastPlug",
-	"short_name": "LastPlug",
-	"version": "0.7.3",
+	"name": "AcidPlug",
+	"short_name": "AP",
+	"version": "0.0.1",
 	"manifest_version": 2,
 	"description": "Some tweaks for plug.dj",
 	"content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
@@ -19,7 +19,7 @@
 	],
 	"page_action": {
 		"default_icon": "img/icon.png",
-		"default_title": "LastPlug Settings",
+		"default_title": "AcidPlug Settings",
 		"default_popup": "settings.html"
 	},
 	"permissions": [
