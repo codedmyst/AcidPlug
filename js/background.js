@@ -39,7 +39,7 @@ function showNotification(title, message, icon) {
 			}, notificationTimeout)
 		})
 
-		_gaq.push(['_trackEvent', 'LastPlug Stats', 'Notifications Served', chrome.app.getDetails().version]);
+		_gaq.push(['_trackEvent', 'AcidPlug Stats', 'Notifications Served', chrome.app.getDetails().version]);
 	}
 }
 
@@ -67,7 +67,7 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
 		if(window.localStorage['enable_updates'] == "true") {
 			if(window.localStorage['lastVersion'] !== undefined) {
 				if(window.localStorage['lastVersion'] !== chrome.app.getDetails().version) {
-					showNotification('LastPlug have just been updated!', 'Updated from ' + window.localStorage['lastVersion'] + " to " + chrome.app.getDetails().version + '.', 'img/icon.png', 'red')
+					showNotification('AcidPlug have just been updated!', 'Updated from ' + window.localStorage['lastVersion'] + " to " + chrome.app.getDetails().version + '.', 'img/icon.png', 'red')
 					window.localStorage['lastVersion'] = chrome.app.getDetails().version
 				}
 			} else {
