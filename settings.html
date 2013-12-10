@@ -33,6 +33,7 @@
 				font-weight: 400;
 				margin: 0;
 				width: 330px;
+				height: 450;
 			}
 			button {
 				background-color: #05a8bb;
@@ -88,14 +89,14 @@
 			label:hover {
 				color: #fc67f7;
 			}
-
+			
 			.padding {
 				padding: 5px;
 			}
 			
 			#header {
 				background-color: #282c35;
-				min-height: 50px;
+				min-height: 30px;
 				width: 100%;
 			}
 			#name {
@@ -156,6 +157,9 @@
 				height: 1px;
 				background: #1c1f25;
 			}
+			.text {
+				text-shadow: 0 0 10px #fc67f7;
+			}
 
 		</style>
 	</head>
@@ -173,15 +177,15 @@
 
 		<div id="content">
 
-			<div class="padding">
-				Options marked with <span style="color: #fc67f7">↻</span> require a page<br /> refresh.
+			<div class="info">
+				Check the <span style="color: #fc67f7"><b>Mouseover</b></span> to see if it requires a refresh.
 			</div>
 
 			<!-- General -->
 
-			<div class="section">General</div>
-			<span class="padding">
-				Notification Timeout: <input size="1" id="notificationTimeout" /> seconds
+			<div class="section">Notification Timeout</div>
+			<span class="setting">
+				<input size="1" id="notificationTimeout" /> seconds
 			</span>
 			<div class="spacer">
 				<div class="divider"></div>
@@ -189,30 +193,30 @@
 
 			<!-- Enable/Disable Notifications -->
 
-			<div class="section">Enable/Disable Notifications</div>
+			<div class="section">Notifications</div>
 
 			<div class="padding">
-				<label for="enable_chatmessages">Chat Messages</label>
+				<label for="enable_chatmessages"><font style= "filter:Glow(color=green,strength=20)"><span title="No Refresh Needed">Chat Messages</span></font></label>
 				<input type="checkbox" id="enable_chatmessages" name="enable_chatmessages" />
 			</div>
 			<div class="padding">
-				<label for="enable_djadvances">DJ Advances</label>
+				<label for="enable_djadvances"><span title="No Refresh Needed">DJ Advances</span></label>
 				<input type="checkbox" id="enable_djadvances" name="enable_djadvances" />
 			</div>
 			<div class="padding">
-				<label for="enable_djupdates">DJ Updates</label>
+				<label for="enable_djupdates"><span title="No Refresh Needed">DJ Updates</span></label>
 				<input type="checkbox" id="enable_djupdates" name="enable_djupdates" />
 			</div>
 			<div class="padding">
-				<label for="enable_fans">Fans</label>
+				<label for="enable_fans"><span title="No Refresh Needed">Fans</span></label>
 				<input type="checkbox" id="enable_fans" name="enable_fans" />
 			</div>
 			<div class="padding">
-				<label for="enable_mentions">Mentions</label>
+				<label for="enable_mentions"><span title="No Refresh Needed">Mentions</span></label>
 				<input type="checkbox" id="enable_mentions" name="enable_mentions" />
 			</div>
 			<div class="padding">
-				<label for="enable_updates">Update Notifications</label>
+				<label for="enable_updates"><span title="No Refresh Needed">Update Notifications</span></label>
 				<input type="checkbox" id="enable_updates" name="enable_updates" />
 			</div>
 			<div class="spacer">
@@ -222,22 +226,22 @@
 			<!-- Misc -->
 
 			<div class="section">
-				Miscellaneous
+				Misc.
 			</div>
 			<div class="padding">
-				<label for="enable_autofan">Auto Fan <span style="color: #fc67f7">↻</span></label>
+				<label for="enable_autofan"><span title="Refresh Needed">Auto Fan</span></label>
 				<input type="checkbox" id="enable_autofan" name="enable_autofan" />
 			</div>
 			<div class="padding">
-				<label for="enable_autowoot">Auto Woot</label>
+				<label for="enable_autowoot"><span title="No Refresh Needed">Auto Woot</span></label>
 				<input type="checkbox" id="enable_autowoot" name="enable_autowoot" />
 			</div>
 			<div class="padding">
-				<label for="enable_grayscale">Grayscale Chat Mode <span style="color: #fc67f7">↻</span></label>
+				<label for="enable_grayscale"><span title="Refresh Needed">Grayscale Chat Mode</span></label>
 				<input type="checkbox" id="enable_grayscale" name="enable_grayscale" />
 			</div>
 			<div class="padding">
-				<label for="enable_historywarn">History Warning <span style="color: #fc67f7">↻</span></label>
+				<label for="enable_historywarn"><span title="Refresh Needed">History Warning</span></label>
 				<input type="checkbox" id="enable_historywarn" name="enable_historywarn" />
 			</div>
 			<br />
